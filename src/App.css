@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Raleway&family=Sigmar+One&family=Ubuntu&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.app-layout-container {
+    height: 95vh;
+}
+
+.logo-dim {
+    width: 108px;
+    margin-right: 10px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.header-nav > ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.header-nav li {
+    list-style: none;    
+}
+
+.header-logo-nav, .header-user-icon {
+    display: flex;
+    align-items: center;
+}
+
+.pbc-x {
+    padding: 0 20px;
+}
+
+.pbc {
+    padding: 20px;
+}
+.banner-container {
+    height: calc(100vh - 125px);
+    width: 98vw;
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    overflow: auto;
+    display: flex;
+}
+.banner-container > img {
+    flex: 1;
+}
+.banner-container::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.banner-container::-webkit-scrollbar-thumb {
+    background: transparent;
+}
+.song-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    gap: 10px;
+    margin: 10px;
+}
+.card-texts {
+    position: relative;
+    bottom: 110px;
+    padding: 10px;
+}
+.card-texts:hover{
+    height: 100%;
+    background-color: #000000;
+}
+.loadmore_btn {
+    width: 25%;
+    margin-bottom: 10px;
+    position: relative;
+    left: 38%;
+}
+.chartwrapper-container {
+    padding: 10px 0;
+}
+.search-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+}
+.search-textfield input{
+    color: white;
+    border: 2px solid white;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 19px;
+    padding: 20px;
+}
+.search-textfield fieldset {
+    border: none;
+}
+
+.suggested-ul{
+    margin-top: 5px;
+    padding: 10px;
+    background: rgba(255, 255, 255, .8);
+    border-radius: 30px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.suggested-ul::-webkit-scrollbar {
+    width: 10px;
+    border-radius: 30px;
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+.suggested-ul::-webkit-scrollbar-thumb{
+    width: 24px;
+    background: #020617;
+    border-radius: 30px;
+  }
+.suggested-ul > li {   
+    list-style: none;    
+    width: 100%;
+    padding: 10px;
+}
+.suggested-ul > li:hover {   
+    color: #020617;
+    background-color: #f1f5f9;
+}
+.search-icon {
+    transform: scale(1.5);
+    position: relative;
+    right: 60px;
+}
