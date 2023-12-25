@@ -1,4 +1,4 @@
 {
-    "base_url": "http://ws.audioscrobbler.com/2.0/",
+    "base_url": "https://ws.audioscrobbler.com/2.0/",
     "api_key": "ef747d42bf2516ff16e56c2f250b9ece"
 }
